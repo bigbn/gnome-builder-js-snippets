@@ -1,0 +1,146 @@
+snippet afn
+- scope js
+- desc Anoynmous Function
+	function(${1:arguments}) {
+		$0
+	}
+snippet al
+- scope js
+- desc Alert
+	alert('${1:msg}');
+	$0	
+snippet apply
+- scope js
+- desc Function apply
+	${1:methodName}.apply(${2:context}, [${3:arguments}]);
+	$0
+snippet call
+- scope js
+- desc Function call
+	${1:methodName}.call(${2:context}, ${3:arguments});
+	$0
+snippet cd
+- scope js
+- desc console.dir
+	console.dir(${1:obj});
+	$0
+snippet ce
+- scope js
+- desc console.error
+	console.error(${1:msg});
+	$0
+snippet cl
+- scope js
+- desc console.log
+	console.log(${1:msg});
+	$0
+snippet ci
+- scope js
+- desc console.info
+	console.info(${1:msg});
+	$0
+snippet cw
+- scope js
+- desc console.warn
+	console.warn(${1:msg});
+	$0	
+snippet cli
+- scope js
+- desc console.inspect
+	console.log(require('util').inspect(${1:obj}, true, ${2:10}, true));
+	$0
+snippet de
+- scope js
+- desc debugger
+	debugger;
+snippet	fn
+- scope js
+- desc Function
+	function ${1:methodName} (${2:arguments}) {
+		$0
+	}
+snippet	fe
+- scope js
+- desc forEach
+	${1:array}.forEach(function(${2:elem}) {
+		$0
+	});
+snippet	fi
+- scope js
+- desc for in
+	for (${1:prop} in ${2:obj}) {
+		if (${2:obj}.hasOwnProperty($1)) {
+		    $0
+		}
+	}
+snippet ii
+- scope js
+- desc Immediately-invoked function expression
+	(function() {
+		$0
+	})();
+snippet ifor	
+- scope js
+- desc Improved for loop
+	for(i = 0, len = ${1:array}.length; i < len; i++) {
+		$0
+	}	
+snippet ifun
+- scope js
+- desc Immediately-invoked function expression(ii alias)
+	(function() {
+		$0
+	})();	
+snippet me
+- scope js
+- desc module.exports
+	module.exports = ${0}
+snippet namespace
+- scope js
+- desc Avoid collisions with other objects or variables in the global namespace.
+	;(function(${1:namespace}) {
+	  'use strict';		
+	  // your code goes here
+	  // namespace.method = function(){};
+	  $0
+	})(window.$1 = window.$1 || {});
+snippet okfe
+- scope js
+- desc Object.keys...forEach
+	Object.keys(${1:obj}).forEach(function(key) {
+		$0
+	});
+snippet ofn
+- scope js
+- desc Function as a property of an object
+	${1:functionName}: function (${2:arguments}) {
+		$0
+	}
+snippet proto
+- scope js
+- desc Prototype
+	${1:ClassName}.prototype.${2:methodName} = function(${3:arguments}) {
+		$0
+	}
+snippet req
+- scope js
+- desc require
+	require('${1:package}');
+	$0
+snippet sti
+- scope js
+- desc setInterval
+	setInterval(function () {
+		$0
+	}, ${1:millis});
+snippet sto
+- scope js
+- desc setTimeout
+	setTimeout(function () {
+		$0
+	}, ${1:millis});
+snippet us
+- scope js
+- desc use strict
+	'use strict';
+	$0
