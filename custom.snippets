@@ -1,0 +1,39 @@
+snippet review
+- scope js
+	//REVIEW: Shabardin_PI($day $shortmonth $year): $0;
+
+snippet td
+- scope js
+	//TODO: Shabardin_PI($day $shortmonth $year): $0;
+
+snippet fm
+- scope js
+	//FIXME: Shabardin_PI($day $shortmonth $year): $0;
+
+snippet vt
+- scope js
+	var _this = this;
+	$0
+
+snippet jsdoc-void
+- scope js
+	//------------------------------------------------------------------------//
+	
+	/**
+	* $0
+	* @param \{${3:String|Object|Array|Integer|Boolean|}\} ${4} ${5}
+	* @method $1#${2:_}
+	* @return ${1:null}
+	*/
+
+snippet jsdoc-private-void
+- scope js
+	//------------------------------------------------------------------------//
+	
+	/**
+	* $0
+	* @param \{${3:String|Object|Array|Integer|Boolean|}\} ${4} ${5}
+	* @method $1#${2:_}
+	* @private
+	* @return ${1:null}
+	*/

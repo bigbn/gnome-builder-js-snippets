@@ -1,14 +1,12 @@
 snippet afn
 - scope js
-- desc Anoynmous Function
-	function(${1:arguments}) {
-		$0
-	}
+- desc Anonymous Function
+	function(${1:arguments}) { $0 }
 snippet al
 - scope js
 - desc Alert
 	alert('${1:msg}');
-	$0	
+	$0
 snippet apply
 - scope js
 - desc Function apply
@@ -19,7 +17,17 @@ snippet call
 - desc Function call
 	${1:methodName}.call(${2:context}, ${3:arguments});
 	$0
-snippet cd
+snippet ca
+- scope js
+- desc console.assert
+	console.assert(${1:expression}, ${2:description});
+	$0
+snippet cde
+- scope js
+- desc console.debug
+	console.debug(${1:obj});
+	$0
+snippet cdi
 - scope js
 - desc console.dir
 	console.dir(${1:obj});
@@ -43,7 +51,12 @@ snippet cw
 - scope js
 - desc console.warn
 	console.warn(${1:msg});
-	$0	
+	$0
+snippet ct
+- scope js
+- desc console.trace
+	console.info(${1:msg});
+	$0
 snippet cli
 - scope js
 - desc console.inspect
@@ -90,7 +103,7 @@ snippet ifun
 - desc Immediately-invoked function expression(ii alias)
 	(function() {
 		$0
-	})();	
+	})();
 snippet me
 - scope js
 - desc module.exports
@@ -113,9 +126,7 @@ snippet okfe
 snippet ofn
 - scope js
 - desc Function as a property of an object
-	${1:functionName}: function (${2:arguments}) {
-		$0
-	}
+	${1:functionName}: function (${2:arguments}) {$0},
 snippet proto
 - scope js
 - desc Prototype
@@ -130,15 +141,11 @@ snippet req
 snippet sti
 - scope js
 - desc setInterval
-	setInterval(function () {
-		$0
-	}, ${1:millis});
+	setInterval(function () { $0 }, ${1:millis});
 snippet sto
 - scope js
 - desc setTimeout
-	setTimeout(function () {
-		$0
-	}, ${1:millis});
+	setTimeout(function () { $0 }, ${1:millis});
 snippet us
 - scope js
 - desc use strict
